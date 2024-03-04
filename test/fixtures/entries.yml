@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  question_name: MyString
+  difficulty_level: MyString
+  no_of_questions: 1
+  points: 1
+
+two:
+  question_name: MyString
+  difficulty_level: MyString
+  no_of_questions: 1
+  points: 1
