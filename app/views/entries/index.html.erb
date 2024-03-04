@@ -1,13 +1,19 @@
-<p style="color: green"><%= notice %></p>
+<% content_for :title do %>
+  QuesTracker &ndash; <%= DateTime.now.strftime("%B %d, %Y")
+ %>
+<% end %>
 
-<h1>Entries</h1>
-
-<div id="entries">
+<div id="columns mt-6 is-centered">
+   
   <% @entries.each do |entry| %>
+    <div class="column is-one-quarter"> 
+    <div class="card">
     <%= render entry %>
+    </div>
     <p>
       <%= link_to "Show this entry", entry %>
     </p>
+    </div>
   <% end %>
 </div>
 

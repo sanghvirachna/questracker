@@ -1,22 +1,36 @@
-<div id="<%= dom_id entry %>">
-  <p>
-    <strong>Question name:</strong>
+<div class="card">
+<div  id="<%= dom_id entry %>">
+ <div class="card-header">
+  <p class="card-header-title" >
+   
     <%= entry.question_name %>
   </p>
+  </div>
 
-  <p>
+  <div class="card-content">
+    <div card="content">
+    <p>
+    <span  class="has-text-weight-bold">
     <strong>Difficulty level:</strong>
     <%= entry.difficulty_level %>
+    </span>
   </p>
 
   <p>
+  <span  class="has-text-weight-bold">
     <strong>No of questions:</strong>
     <%= entry.no_of_questions %>
+    </span>
   </p>
 
   <p>
+  <span  class="has-text-weight-bold">
     <strong>Points:</strong>
     <%= entry.points %>
+    </span>
   </p>
-
+    </div>
+  <p class="italic">Logged <%= time_ago_in_words(entry.created_at) %> ago</p>
+  </div>
+</div>
 </div>
